@@ -1,0 +1,157 @@
+/* Minimal landing — basic template pattern: bar + center block + 3 cols + footer */
+
+.tpl {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font, system-ui, sans-serif);
+  color: #334155;
+  background: #e2e8f0;
+}
+
+.tpl-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  background: #fff;
+  border-bottom: 1px solid #cbd5e1;
+}
+
+.tpl-brand {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #0f172a;
+}
+
+.tpl-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.tpl-nav a {
+  font-size: 0.9rem;
+  color: #475569;
+  text-decoration: none;
+}
+
+.tpl-nav a:hover {
+  color: #0f172a;
+}
+
+.tpl-btn {
+  display: inline-block;
+  padding: 0.45rem 0.9rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #0f172a;
+  text-decoration: none;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.tpl-btn:hover {
+  background: #f8fafc;
+}
+
+.tpl-btn--solid {
+  background: #0f172a;
+  color: #fff;
+  border-color: #0f172a;
+}
+
+.tpl-btn--solid:hover {
+  background: #1e293b;
+  color: #fff;
+}
+
+.tpl-btn--line {
+  background: transparent;
+}
+
+.tpl-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  padding: 2rem 1.25rem;
+  text-align: center;
+}
+
+.tpl-h1 {
+  margin: 0;
+  font-size: clamp(2rem, 6vw, 2.75rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: #0f172a;
+}
+
+.tpl-lead {
+  margin: 0;
+  max-width: 22rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #64748b;
+}
+
+.tpl-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  justify-content: center;
+  margin-top: 0.25rem;
+}
+
+.tpl-highlights {
+  list-style: none;
+  margin: 2.5rem 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  max-width: 36rem;
+  width: 100%;
+}
+
+@media (max-width: 540px) {
+  .tpl-highlights {
+    grid-template-columns: 1fr;
+  }
+}
+
+.tpl-highlights li {
+  padding: 1rem;
+  background: #fff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.tpl-highlights strong {
+  font-size: 0.95rem;
+  color: #0f172a;
+}
+
+.tpl-highlights span {
+  font-size: 0.82rem;
+  color: #64748b;
+}
+
+.tpl-foot {
+  padding: 1rem;
+  text-align: center;
+  border-top: 1px solid #cbd5e1;
+  background: #fff;
+  color: #94a3b8;
+}
+
+.tpl-foot small {
+  font-size: 0.8rem;
+}

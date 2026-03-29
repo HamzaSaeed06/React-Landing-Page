@@ -1,0 +1,54 @@
+{
+  "title": "Clearline — structured modules",
+  "version": "2026.1",
+  "modules": [
+    {
+      "id": "intro",
+      "title": "ReactJS Introduction & How to Create React Project",
+      "summary": "What React is, the virtual DOM mental model, and scaffolding apps with Vite or CRA.",
+      "tags": ["Tooling", "JSX primer"]
+    },
+    {
+      "id": "components",
+      "title": "Components, Props & JSX",
+      "summary": "Composable UI with props, children, and expressive JSX patterns for readable trees.",
+      "tags": ["Props", "Composition"]
+    },
+    {
+      "id": "state-forms",
+      "title": "State, Events & Forms",
+      "summary": "Controlled inputs, lifting state, and predictable event handling in interactive UIs.",
+      "tags": ["useState", "Forms"]
+    },
+    {
+      "id": "depth",
+      "title": "React in Depth and Behind the Scenes",
+      "summary": "Components, composition, re-useability, and mental models that keep UIs maintainable.",
+      "tags": ["Architecture", "Reuse"]
+    },
+    {
+      "id": "effects",
+      "title": "Effects & Data Fetching",
+      "summary": "Synchronizing with the outside world, effect dependencies, and resilient async flows.",
+      "tags": ["useEffect", "Fetch"]
+    },
+    {
+      "id": "advanced",
+      "title": "Custom Hooks, Refs & useReducer",
+      "summary": "Encapsulating logic, imperative handles, and predictable state machines with reducers.",
+      "tags": ["Hooks", "Patterns"]
+    },
+    {
+      "id": "class",
+      "title": "Class-based React (Optional)",
+      "summary": "Lifecycle methods, error boundaries, and maintaining older codebases when you need them.",
+      "tags": ["Optional", "Legacy"]
+    },
+    {
+      "id": "spa",
+      "title": "Single Page Application (SPA) — React Router DOM",
+      "summary": "Client-side routing with React Router DOM, nested routes, and SPA navigation without full reloads.",
+      "tags": ["React Router", "SPA"]
+    }
+  ]
+}
